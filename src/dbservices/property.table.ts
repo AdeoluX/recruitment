@@ -53,7 +53,7 @@ export default class PropertyRepo {
     return filter_property;
   };
 
-  deleteProperty = async (id: string) => {
+  deleteProperty = async (id: string): Promise<any> => {
     const _delete = await PropertyModel.deleteOne({ _id: id });
     return _delete.deletedCount;
   };
