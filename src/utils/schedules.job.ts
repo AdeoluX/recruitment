@@ -38,7 +38,7 @@ const send_email = async () => {
 
   for (const item of find_all_property) {
     const sent = await emailSender(
-      item.user.email,
+      'metrics@clooper.com ',
       'New Property Published',
       `<div>
         <h1>New Property Published</h1>
